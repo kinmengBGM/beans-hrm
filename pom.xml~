@@ -2,15 +2,19 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
-	<parent>
+	
 		<groupId>com.beans</groupId>
-		<artifactId>leaveapp</artifactId>
-		<version>1.0-SNAPSHOT</version>
-	</parent>
-	<artifactId>web</artifactId>
+		<version>0.1.0-SNAPSHOT</version>
+	<artifactId>beans-hrm</artifactId>
 	<packaging>war</packaging>
 	<name>Web Application for HRM</name>
 	<url>http://maven.apache.org</url>
+
+<scm>
+    <connection>scm:git:https://github.com/kinmengBGM/beans-hrm.git</connection>
+    <developerConnection>scm:git:https://github.com/kinmengBGM/beans-hrm.git</developerConnection>
+    <url>https://github.com/kinmengBGM/beans-hrm</url>
+  </scm>
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -96,25 +100,30 @@
 		<dependency>
 			<groupId>${project.groupid}</groupId>
 			<artifactId>common</artifactId>
+			<version>0.1.0</version>
 		</dependency>
 		<dependency>
 			<groupId>${project.groupid}</groupId>
 			<artifactId>utilities</artifactId>
+			<version>0.1.0</version>
 		</dependency>
 
 		<dependency>
 			<groupId>${project.groupid}</groupId>
 			<artifactId>employeeprofileservice</artifactId>
+			<version>0.1.0</version>
 		</dependency>
 
 		<dependency>
 			<groupId>${project.groupid}</groupId>
 			<artifactId>leaveapplication</artifactId>
+			<version>0.1.0</version>
 		</dependency>
 
 		<dependency>
 			<groupId>${project.groupid}</groupId>
 			<artifactId>applyleaveflow</artifactId>
+			<version>0.1.0</version>
 		</dependency>
 		<!-- JSF dependencies -->
 		<dependency>
@@ -171,6 +180,7 @@
 		<dependency>
 			<groupId>${project.groupid}</groupId>
 			<artifactId>masterdataservice</artifactId>
+			<version>0.1.0</version>
 		</dependency>
 
 		<dependency>
@@ -307,25 +317,5 @@
 		</plugins>
 	</build>
 
-	<repositories>
-		<repository>
-			<id>prime-repo</id>
-			<url>http://repository.primefaces.org</url>
-			<name>PrimeFaces Maven Repository</name>
-		</repository>
-
-		<repository>
-			<id>jboss-public-repository-group</id>
-			<name>JBoss Public Repository Group</name>
-			<url>http://repository.jboss.org/nexus/content/groups/public/</url>
-			<releases>
-				<enabled>true</enabled>
-				<updatePolicy>never</updatePolicy>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-				<updatePolicy>daily</updatePolicy>
-			</snapshots>
-		</repository>
-	</repositories>
+	
 </project>
